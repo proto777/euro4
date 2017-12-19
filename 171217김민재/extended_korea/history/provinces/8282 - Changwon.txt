@@ -1,0 +1,27 @@
+#8282 - Chang-won
+
+owner = KOR
+controller = KOR
+culture = korean
+religion = confucianism
+capital = "Changwon"
+trade_goods = gold
+hre = no
+base_tax = 1
+base_manpower = 1
+base_production = 1
+is_city = yes
+add_core = KOR
+discovered_by = chinese
+discovered_by = nomad_group
+
+
+1542.1.1   = { discovered_by = POR }
+1592.6.4 = { controller = JAP } # Japanese invasion - Siege of Sangju
+1593.5.25 = { controller = KOR unrest = 0 } # With Chinese help the Japanese are driven back
+1597.10.18 = { controller = JAP }
+1598.1.4  = { controller = KOR } 
+1637.1.1  = { add_core = MNG } # Tributary of Qing China
+1644.1.1  = { add_core = MCH remove_core = MNG } # Part of the Manchu empire
+1645.7.1  = { add_core = QNG remove_core = MCH }
+1653.1.1  = { discovered_by = NED } # Hendrick Hamel
