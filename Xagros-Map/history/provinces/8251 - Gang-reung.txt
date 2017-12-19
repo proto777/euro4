@@ -1,9 +1,9 @@
-#8251 - Gangreung
+#8251 - Gang-reung
 owner = KOR
 controller = KOR
 culture = korean
 religion = confucianism
-capital = "Gangreung"
+capital = "Gang-reung"
 trade_goods = gold
 hre = no
 base_tax = 1
