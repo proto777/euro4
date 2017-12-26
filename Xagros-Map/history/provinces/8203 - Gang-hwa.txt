@@ -1,0 +1,17 @@
+#8203 - Gang-hwa
+
+owner = KOR
+controller = KOR
+culture = korean
+religion = confucianism
+capital = "Gang-hwa"
+trade_goods = paper
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 3
+is_city = yes
+add_core = KOR
+fort_15th = yes
+discovered_by = chinese
+discovered_by = nomad_group

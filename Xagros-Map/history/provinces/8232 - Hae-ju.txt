@@ -1,0 +1,17 @@
+#8232 - Hae-ju
+
+owner = KOR
+controller = KOR
+culture = korean
+religion = confucianism
+capital = "Hae-ju"
+trade_goods = paper
+hre = no
+base_tax = 4
+base_production = 4
+base_manpower = 4
+is_city = yes
+add_core = KOR
+fort_15th = yes
+discovered_by = chinese
+discovered_by = nomad_group
