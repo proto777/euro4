@@ -1,0 +1,52 @@
+sea_province = { 0 0 255 }
+sea_province = { 0 0 204 }
+sea_province = { 0 0 153 }
+sea_province = { 0 0 102 }
+sea_province = { 0 0 230 }
+sea_province = { 0 0 179 }
+sea_province = { 0 0 128 }
+sea_province = { 0 0 77 }
+sea_province = { 51 51 255 }
+sea_province = { 41 41 204 }
+sea_province = { 31 31 153 }
+sea_province = { 20 20 102 }
+sea_province = { 46 46 230 }
+sea_province = { 36 36 179 }
+sea_province = { 25 25 128 }
+sea_province = { 15 15 77 }
+
+strait = {
+from = { 204 177 122 }
+to = { 102 88 61 }
+through = { 0 0 77 }
+}
+
+regions = 3
+region = { 153 122 61 }
+region = { 77 38 0 }
+region = { 179 131 107 }
+
+river_estuary_modifier = { 128 51 51 }
+
+important_natural_harbor = { 102 20 20 }
+important_natural_harbor = { 102 41 41 }
+important_natural_harbor = { 153 92 92 }
+important_natural_harbor = { 102 61 41 }
+important_natural_harbor = { 230 138 92 }
+important_natural_harbor = { 77 69 31 }
+important_natural_harbor = { 128 111 77 }
+important_natural_harbor = { 153 133 92 }
+important_natural_harbor = { 102 61 20 }
+important_natural_harbor = { 77 38 0 }
+important_natural_harbor = { 204 102 0 }
+important_natural_harbor = { 179 131 107 }
+important_natural_harbor = { 102 75 61 }
+important_natural_harbor = { 255 187 153 }
+
+num_sea_provinces = 16
+num_land_provinces = 233
+size = { 9 6 }
+
+weight = 100
+
+empty = { 0 0 0 }
