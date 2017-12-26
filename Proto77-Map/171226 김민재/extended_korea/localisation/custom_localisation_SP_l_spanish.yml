@@ -1,0 +1,75 @@
+﻿l_spanish:
+
+#######################################################
+###   CUSTOMIZED LOCALIZATION STRINGS FOR SPANISH   ###
+#######################################################
+
+### Articles and pronouns // Artículos y pronombres
+ #string_low_al_SP:0 "al"
+ #string_up_Al_SP:0 "Al"
+ #string_low_ala_SP:0 "a la"
+ #string_up_Ala_SP:0 "A la"
+ #string_low_del_SP:0 "del"
+ #string_up_Del_SP:0 "Del"
+ #string_low_dela_SP:0 "de la"
+ #string_up_Dela_SP:0 "De la"
+ #string_low_el_SP:0 "el"
+ #string_up_El_SP:0 "El"
+ #string_low_el2_SP:0 "él"
+ #string_up_El2_SP:0 "Él"
+ #string_low_ella_SP:0 "ella"
+ #string_up_Ella_SP:0 "Ella"
+ #string_low_lo_SP:0 "lo"
+ #string_up_Lo_SP:0 "Lo"
+ #string_low_la_SP:0 "la" # Sometimes it seems "el"
+ #string_up_La_SP:0 "La"
+### Adjective and name endings // Adjetivos y sufijos
+ #string_a_SP:0 "a"
+ #string_e_SP:0 "e"
+ #string_in_SP:0 "ín"
+ #string_ina_SP:0 "ina"
+ #string_o_SP:0 "o"
+ #string_on_SP:0 "ón"
+ #string_ona_SP:0 "ona"
+ #string_X_SP:0 ""
+
+
+### Male and female advisor titles / Títulos de los consejeros y consejeras
+# Administrative Advisors / Consejeros administrativo
+ #string_philosopher_male_SP:0 "filósofo"
+ #string_philosopher_fem_SP:0 "filósofa"
+ #string_natural_scientist_SP:0 "naturalista"
+ #string_artist_SP:0 "artista"
+ #string_treasurer_male_SP:0 "tesorero"
+ #string_treasurer_fem_SP:0 "tesorera"
+ #string_theologian_male_SP:0 "teólogo"
+ #string_theologian_fem_SP:0 "teóloga"
+ #string_master_of_mint_male_SP:0 "maestro acuñador"
+ #string_master_of_mint_fem_SP:0 "maestra acuñadora"
+ #string_inquisitor_male_SP:0 "inquisidor"
+ #string_inquisitor_fem_SP:0 "inquisidora"
+# Diplomatic Advisors / Consejeros diplomáticos
+ #string_statesman_SP:0 "estadista"
+ #string_naval_reformer_male_SP:0 "reformador naval"
+ #string_naval_reformer_fem_SP:0 "reformadora naval"
+ #string_trader_SP:0 "mercader"
+ #string_spymaster_male_SP:0 "jefe de espionaje"
+ #string_spymaster_fem_SP:0 "jefa de espionaje"
+ #string_colonial_governor_male_SP:0 "gobernador colonial"
+ #string_colonial_governor_fem_SP:0 "gobernadora colonial"
+ #string_diplomat_male_SP:0 "diplomático"
+ #string_diplomat_fem_SP:0 "diplomática"
+ #string_navigator_SP:0 "navegante"
+# Military Advisors / Consejeros militares
+ #string_army_reformer_male_SP:0 "reformador militar"
+ #string_army_reformer_fem_SP:0 "reformadora militar"
+ #string_army_organiser_male_SP:0 "organizador militar"
+ #string_army_organiser_fem_SP:0 "organizadora militar"
+ #string_commandant_SP:0 "comandante"
+ #string_quartermaster_SP:0 "intendente"
+ #string_recruitmaster_male_SP:0 "reclutador"
+ #string_recruitmaster_fem_SP:0 "reclutadora"
+ #string_fortification_expert_male_SP:0 "ingeniero militar"
+ #string_fortification_expert_fem_SP:0 "ingeniera militar"
+ #string_grand_captain_male_SP:0 "gran capitán"
+ #string_grand_captain_fem_SP:0 "gran capitana"
