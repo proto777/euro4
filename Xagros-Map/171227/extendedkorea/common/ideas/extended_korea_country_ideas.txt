@@ -1,0 +1,40 @@
+# This file contains the default idea group in order to make sure it is loaded last.
+
+SOO_ideas = {
+	start = {
+		stability_cost_modifier = -0.1
+		discipline = 0.05
+	}
+	
+	bonus = {
+		infantry_power = 0.15
+	}
+	
+	trigger = {
+		tag = SOO
+	}
+	free = yes
+	
+	soo_unification_under_the_emperor = {
+		global_unrest = -2
+	}
+	reformed_land_holding = {
+		global_manpower_modifier = 0.2
+	}
+	soo_modernization = {
+		technology_cost = -0.05
+		global_institution_spread = 0.1
+	}
+	soo_maritime_legacy = {
+		ship_durability = 0.1
+	}
+	soo_land_of_the_rising_sun = {
+		prestige = 1
+	}
+	soo_kaitakudan = {
+		global_colonial_growth = 20
+	}
+	soo_great_power_diplomacy = {
+		ae_impact = -0.15
+	}
+}

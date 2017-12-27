@@ -1,0 +1,16 @@
+#MOD_Tsushima
+
+vassal = {
+	first = KOR
+	second = SOO
+	start_date = 1444.1.1
+	end_date = 1592.1.1
+}
+
+
+vassal = {
+	first = JAP
+	second = SOO
+	start_date = 1615.6.4
+	end_date = 1821.1.1
+}
