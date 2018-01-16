@@ -1,0 +1,36 @@
+#MOD_Tsushima
+#기해동정 1419년 6월 19일 삼군 도체찰사 이종무의 대마도 토벌
+#1420년 1월 조선에 항복
+#계해조약(1443 - 세종25)과 임신조약(1512 - 중종7)
+dependency = {
+	subject_type = "independent_vassal"
+	first = KOR
+	second = SOO
+	start_date = 1420.1.1
+	end_date = 1587.6.3
+}
+
+#도요토미 정권에 충성을 맹세 - 임진왜란(고니시 유키나가)
+vassal = {
+	first = ODA
+	second = SOO
+	start_date = 1587.6.4
+	end_date = 1598.8.18
+}
+#도쿠가와 정권에 굴복 - 세키가하라 전투(서군에 참가)
+#서군이 패배하였고 도쿠가와에게 항복함
+#도쿠가와는 조선과의 외교를 위해 소 씨를 처벌없이 받아드림
+dependency = {
+	subject_type = "independent_vassal"
+	first = TKG
+	second = SOO
+	start_date = 1603.3.24
+	end_date = 1821.1.1
+}
+#조선과의 화약인 기유약조 체결(1609 - 광해군 1)
+alliance = {
+	first = KOR
+	second = SOO
+	start_date = 1609.3.1
+	end_date = 1821.1.1
+}

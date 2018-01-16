@@ -1,0 +1,16 @@
+name="Extended Korea"
+archive="mod/extendedkorea.zip"
+tags={
+	"Historical"
+	"New Nations"
+	"Map"
+	"Gameplay"
+	"Expansion"
+	"Religion"
+	"Technologies"
+	"National Ideas"
+	"Events"
+	"Missions And Decisions"
+}
+picture="extendedkorea.jpg"
+supported_version="1.24.*.*"

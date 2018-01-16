@@ -1,0 +1,43 @@
+함흥 모피 fur
+길주 가축 livestock
+영흥 철 iron
+육진 모피 fur
+
+사군 모피 fur
+의주 비단 silk
+안주 금 gold
+평양 종이 paper 
+영변 비단 silk
+정주 도자기 chinaware (정주 유기)
+
+황주 면 cotton
+해주 곡물 grain
+
+한성 비단 silk
+파주 금 gold
+양주 곡물 grain
+여주 도자기 chinaware
+광주 도자기 chinaware (안성 유기)
+개성 종이 paper
+강화 곡물 grain
+
+강릉 보석 gems
+원주 가축 livestock
+
+홍주 천 cloth
+청주 향신료 spices
+충주 향 incense
+공주 향신료 spices
+
+전주 종이 paper
+나주 차 tea
+광주 소금 salt
+제주 가축 livestock
+
+경주 비단 silk
+상주 향신료 spices
+창원 도자기 chinaware
+진주 차 tea
+안동 종이 paper
+성주 곡물 grain
+대마 생선 fish

@@ -1,0 +1,116 @@
+#Tartar Yoke
+country_event = {
+	id = InVH.90
+	title = "InVH.EVTNAME90"
+	desc = "InVH.EVTDESC90"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MOS
+		is_year = 1300
+		subject_of = GOL
+		NOT = { is_year = 1460 }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "InVH.EVTOPTA90"
+		add_opinion = {
+			who = GOL
+			modifier = strong_distrust
+		}
+		GOL = {
+			create_subject = {
+				subject_type = independent_vassal
+				subject = ROOT
+			}
+			hidden_effect = {
+				add_opinion = {
+					who = ROOT
+					modifier = strong_distrust
+				}
+				ROOT = { add_liberty_desire = -30 }
+			}
+		}
+	}
+}
+
+#Rule of Esen Taishi
+country_event = {
+	id = InVH.91
+	title = "InVH.EVTNAME91"
+	desc = "InVH.EVTDESC91"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = KHA
+		is_year = 1439
+		subject_of = OIR
+		NOT = { is_year = 1453 }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "InVH.EVTOPTA91"
+		OIR = {
+			create_subject = {
+				subject_type = independent_vassal
+				subject = ROOT
+			}
+			hidden_effect = {
+				add_opinion = {
+					who = ROOT
+					modifier = strong_distrust
+				}
+			}
+		}
+	}
+}
+
+#Toyotomi Hideyoshi's Kyushu conquest
+country_event = {
+	id = InVH.92
+	title = "InVH.EVTNAME92"
+	desc = "InVH.EVTDESC92"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SOO
+		subject_of = ODA
+		is_year = 1445
+		NOT = { has_country_flag = event_kyushu_conquest_had }
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "InVH.EVTOPTA92"
+		set_country_flag = event_kyushu_conquest_had
+		ODA = {
+			create_subject = {
+				subject_type = independent_vassal
+				subject = ROOT
+			}
+			hidden_effect = {
+				add_opinion = {
+					who = ROOT
+					modifier = strong_distrust
+				}
+			}
+		}
+	}
+}

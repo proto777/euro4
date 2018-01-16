@@ -1,0 +1,64 @@
+#base resources
+grain 곡물
+
+wine 포도주
+
+wool 양모
+
+cloth 천
+
+fish 생선
+
+fur 모피
+
+salt 소금
+
+naval_supplies 해군보급품
+
+#metals
+copper 구리
+
+gold 금
+
+iron 철
+
+#아프리칸 리소스
+slaves 노예
+
+ivory 상아
+
+#이스턴 리소스
+tea 차
+
+chinaware 도자기
+
+spices 향신료
+
+#뉴월드 리소스
+coffee 커피
+
+cotton 면
+
+sugar 설탕
+
+tobacco 담배
+
+cocoa 코코아
+
+silk 비단
+
+dyes 염료
+
+tropical_wood
+
+livestock 가축
+
+incense 향
+
+glass 유리
+
+paper 종이
+
+gems 보석
+
+unknown

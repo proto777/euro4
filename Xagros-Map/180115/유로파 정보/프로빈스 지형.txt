@@ -1,0 +1,44 @@
+
+육진 hills 구릉지
+길주 mountain 산지
+함흥 highlands 고원
+영흥 highlands 고원
+
+사군 mountain 산지
+평양 farmlands 농경지
+의주 grasslands 초원
+정주 grasslands 초원
+영변 hills 구릉지
+안주 grasslands 초원
+
+강릉 highlands 고원
+원주 hills 구릉지
+
+해주 grasslands 초원
+황주 mountain 산지
+
+개성 highlands 고원
+한성 farmlands 농경지
+강화 coastline 해안지대
+여주 farmlands 농경지
+광주 farmlands 농경지
+양주 hills 구릉지
+파주 grasslands 초원
+
+청주 mountain 산지
+홍주 coastline 해안지대
+공주 hills 구릉지
+충주 grasslands 초원
+
+전주 farmlands 농경지
+나주 coastline 해안지대
+광주 grasslands 초원
+제주 coastline 해안지대
+
+경주 farmlands 농경지
+진주 farmlands 농경지
+상주 hills 구릉지
+안동 mountain 산지
+성주 grasslands 초원
+창원 coastline 해안지대
+대마 coastline 해안지대

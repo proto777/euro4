@@ -1,0 +1,8 @@
+mountain 산지
+woods 수림
+hills 언덕
+highlands 고원
+forest 숲
+grasslands 평야
+farmlands 농지
+coastline 해안지대
