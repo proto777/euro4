@@ -1,0 +1,37 @@
+﻿l_english:
+ #-----------------------------------------
+ # Names
+ # Area_names
+ # Area_adjs
+ #-----------------------------------------
+ pyeong-an_area:0 "Pyeong-an-do"
+ pyeong-an_area_name:0 "Pyeong-an-do"
+ pyeong-an_area_adj:0 "Pyeong-an-dian"
+ 
+ ham-gil_area:0 "Ham-gil-do"
+ ham-gil_area_name:0 "Ham-gil-do"
+ ham-gil_area_adj:0 "Ham-gil-dian"
+ 
+ hwang-hae_area:0 "Hwang-hae-do"
+ hwang-hae_area_name:0 "Hwang-hae-do"
+ hwang-hae_area_adj:0 "Hwang-hae-dian"
+ 
+ gang-won_area:0 "Gang-won-do"
+ gang-won_area_name:0 "Gang-won-do"
+ gang-won_area_adj:0 "Gang-won-dian"
+ 
+ gyeong-gi_area:0 "Gyeong-gi-do"
+ gyeong-gi_area_name:0 "Gyeong-gi-do"
+ gyeong-gi_area_adj:0 "Gyeong-gi-dian"
+ 
+ chung-cheong_area:0 "Chung-cheong-do"
+ chung-cheong_area_name:0 "Chung-cheong-do"
+ chung-cheong_area_adj:0 "Chung-cheong-dian"
+ 
+ jeon-la_area:0 "Jeon-la-do"
+ jeon-la_area_name:0 "Jeon-la-do"
+ jeon-la_area_adj:0 "Jeon-la-dian"
+ 
+ gyeong-sang_area:0 "Gyeong-sang-do"
+ gyeong-sang_area_name:0 "Gyeong-sang-do"
+ gyeong-sang_area_adj:0 "Gyeong-sang-dian"
