@@ -7,7 +7,11 @@ religion = confucianism
 capital = "Na-ju"
 trade_goods = tea
 hre = no
+<<<<<<< HEAD
 base_tax = 2
+=======
+base_tax = 3
+>>>>>>> master
 base_production = 3
 base_manpower = 2
 is_city = yes

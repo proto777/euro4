@@ -7,9 +7,15 @@ religion = confucianism
 capital = "Hong-ju"
 trade_goods = cloth
 hre = no
+<<<<<<< HEAD
 base_tax = 2
 base_production = 3
 base_manpower = 3
+=======
+base_tax = 3
+base_production = 3
+base_manpower = 2
+>>>>>>> master
 is_city = yes
 add_core = KOR
 discovered_by = chinese

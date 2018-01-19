@@ -9,7 +9,11 @@ trade_goods = silk
 hre = no
 base_tax = 5
 base_production = 5
+<<<<<<< HEAD
 base_manpower = 3
+=======
+base_manpower = 2
+>>>>>>> master
 is_city = yes
 add_core = KOR
 fort_15th = yes

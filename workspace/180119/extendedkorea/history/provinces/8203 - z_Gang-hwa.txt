@@ -7,9 +7,15 @@ religion = confucianism
 capital = "Gang-hwa"
 trade_goods = grain
 hre = no
+<<<<<<< HEAD
 base_tax = 3
 base_production = 5
 base_manpower = 3
+=======
+base_tax = 4
+base_production = 4
+base_manpower = 2
+>>>>>>> master
 is_city = yes
 add_core = KOR
 fort_15th = no

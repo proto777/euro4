@@ -7,8 +7,13 @@ religion = confucianism
 capital = "Jeong-ju"
 trade_goods = chinaware
 hre = no
+<<<<<<< HEAD
 base_tax = 2
 base_production = 1
+=======
+base_tax = 4
+base_production = 4
+>>>>>>> master
 base_manpower = 2
 is_city = yes
 add_core = KOR
