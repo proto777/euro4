@@ -1,32 +1,33 @@
-name = "Imjin War"
+name = "Imjin War" #Ex_KOR Mod
 war_goal = {
 	type = take_claim
 	casus_belli = cb_conquest
-	province = 736 # Gyeongsang
+	province = 4229 # 경상도 부산 침략
 }
 
-1592.5.25 = {
+1592.5.23 = {
 	add_attacker = ODA
 	add_attacker = SMZ
 	add_attacker = MRI
 	add_attacker = CSK
-	add_attacker = SOO #MOD SOO Imjin War
+	add_attacker = SOO #SOO Imjin War
 	add_defender = KOR
 }
 
-1592.5.26 = {
+1592.5.24 = {
 	battle = {
-		name = "Busan"
-		location = 736
+		name = "Siege of Busanjin" #부산진 전투
+		location = 4229
 		attacker = {
 			commander = "Konishi Yukinaga"
-			infantry = 18000
+			infantry = 18700
+			transport = 700
 			losses = 5	# percent
 			country = ODA
 		}
 		defender = {
 			commander = "Jeong Bal"
-			infantry = 8000
+			infantry = 3000 #군병800/민병2200
 			losses = 90	# percent
 			country = KOR
 		}
@@ -34,19 +35,59 @@ war_goal = {
 	}
 }
 
-1592.6.6 = {
+1592.5.25 = {
 	battle = {
-		name = "Ch'ungju"
-		location = 735
+		name = "Siege of Dongnae" #동래성 전투
+		location = 4229
 		attacker = {
-			commander = "Konishi Yukinaga"	# Konishi Yukinaga
-			infantry = 18000
+			commander = "Konishi Yukinaga"
+			infantry = 30000
+			losses = 15	# percent
+			country = ODA
+		}
+		defender = {
+			commander = "Jeong Bal"
+			infantry = 20000 #군병2500-3000/민병15000
+			losses = 80	# percent
+			country = KOR
+		}
+		result = yes
+	}
+}
+
+1592.6.3 = {
+	battle = {
+		name = "Battle of Sangju" #상주 전투
+		location = 736
+		attacker = {
+			commander = "Konishi Yukinaga"
+			infantry = 18700
+			losses = 1	# percent
+			country = ODA
+		}
+		defender = {
+			commander = "Yi Il"
+			infantry = 800 #군병2500-3000/민병15000
+			losses = 95	# percent
+			country = KOR
+		}
+		result = yes
+	}
+}
+
+1592.6.7 = {
+	battle = {
+		name = "Battle of Tangeumdae" #탄금대 전투
+		location = 4229
+		attacker = {
+			commander = "Konishi Yukinaga"
+			infantry = 18700
 			losses = 3	# percent
 			country = ODA
 		}
 		defender = {
-			commander = "Shin Rip"	# Sin Lip
-			infantry = 8000
+			commander = "Shin Rip"
+			infantry = 16000
 			losses = 38	# percent
 			country = KOR
 		}
@@ -56,11 +97,11 @@ war_goal = {
 
 1592.6.16 = {
 	battle = {
-		name = "Okpo" # Yi's initial naval campaign
+		name = "Battle of Okpo" #옥포해전 이순신 첫 전투
 		location = 1376
 		defender = {
 			commander = "Yi Sun-sin"	# Yi Sun-sin
-			heavy_ship = 28
+			heavy_ship = 27
 			light_ship = 18
 			losses = 0	# percent
 			country = KOR
@@ -68,26 +109,30 @@ war_goal = {
 		attacker = {
 			commander = "Todo Takatora"	# Todo Takatora
 			heavy_ship = 5
-			light_ship = 63
-			losses = 60	# percent
+			light_ship = 45
+			losses = 80	# percent
 			country = ODA
 		}
 		result = no
 	}
 }
 
+1592.7.1 = {
+	add_defender = MNG
+}
+
 1592.7.7 = {
 	battle = {
-		name = "Imjin River"
-		location = 735
+		name = "Battle of Imjin River" #임진강 전투
+		location = 8243
 		attacker = {
 			commander = "Kato Kiyomasa"	
-			infantry = 20000
+			infantry = 22800
 			losses = 5	# percent
 			country = ODA
 		}
 		defender = {
-			commander = "Kim Myeong-wo"
+			commander = "Kim Myeong-won"
 			infantry = 13000
 			losses = 40	# percent
 			country = KOR
@@ -96,13 +141,29 @@ war_goal = {
 	}
 }
 
-1592.8.1 = {
-	add_defender = MNG
+1592.7.21 = {
+	battle = {
+		name = "Siege of Pyongyang" #1차 평양성 전투
+		location = 1845
+		attacker = {
+			commander = "Konishi Yukinaga"
+			infantry = 18700
+			losses = 5	# percent
+			country = ODA
+		}
+		attacker = {
+			commander = "Yi Hon"
+			infantry = 4000 #3-4000
+			losses = 75	# percent
+			country = KOR
+		}
+		result = yes
+	}
 }
 
 1592.8.14 = {
 	battle = {
-		name = "Hansan" #Hansan Island
+		name = "Battle of Hansan Island" #한산도 대첩
 		location = 1376
 		defender = {
 			commander = "Yi Sun-sin"	# Yi Sun-sin
@@ -111,69 +172,75 @@ war_goal = {
 			country = KOR
 		}
 		attacker = {
-			commander = "Wakizaka"	# Wakizaka
+			commander = "Wakisaka Yasuharu"	# Wakisaka Yasuharu
 			heavy_ship = 60
 			light_ship = 13
-			losses = 64	# percent
+			losses = 84	# percent
 			country = ODA
 		}
 		result = no
 	}
 }
 
-1593.2.8 = {
+1593.2.6 = {
 	battle = {
-		name = "Pyongyang" #2nd Battle of Pyongyang
+		name = "Siege of Pyongyang" #4차 평양성 전투
 		location = 1845
 		defender = {
+			commander = "Konishi Yukinaga"
+			infantry = 15000
+			losses = 75	# percent
+			country = ODA
+		}
+		attacker = {
 			commander = "Li Rusong"
-			infantry = 53000
+			infantry = 43000 #명원군43000
 			losses = 5	# percent
 			country = MNG
 		}
 		attacker = {
-			commander = "Konishi Yukinaga"
-			infantry = 15000
-			losses = 8	# percent
-			country = ODA
-		}
-		result = no
-	}
-}
-
-1593.2.27 = {
-	battle = {
-		name = "Byeokjegwan"
-		location = 735
-		attacker = {
-			commander = "Ukita Hideie"
-			infantry = 41000
-			losses = 8	# percent
-			country = ODA
-		}
-		defender = {
-			commander = "Li Rusong"
-			infantry = 20000
-			losses = 35	# percent
-			country = MNG
+			commander = "Ryu Seong-ryong"
+			infantry = 10200 #조선군8000/승려병2200
+			losses = 15	# percent
+			country = KOR
 		}
 		result = yes
 	}
 }
 
-1597.8.27 = {
+1593.2.27 = {
 	battle = {
-		name = "Chilcheollyang"
+		name = "Battle of Byeokjegwan" #벽제관 전투
+		location = 8243
+		attacker = {
+			commander = "Li Rusong"
+			infantry = 43000
+			losses = 35	# percent
+			country = MNG
+		}
+		defender = {
+			commander = "Ukita Hideie"
+			infantry = 71000
+			losses = 8	# percent
+			country = ODA
+		}
+		result = yes
+	}
+}
+
+1597.8.28 = {
+	battle = {
+		name = "Battle of Chilcheollyang" #칠천량 해전
 		location = 1376
 		attacker = {
 			commander = "Todo Takatora"	# Todo Takatora
-			heavy_ship = 500
+			heavy_ship = 60
 			losses = 1	# percent
 			country = ODA
 		}
 		defender = {
 			commander = "Won Gyan"	# Won Gyan
-			heavy_ship = 169
+			heavy_ship = 183
 			losses = 93	# percent
 			country = KOR
 		}
@@ -181,9 +248,9 @@ war_goal = {
 	}
 }
 
-1597.10.26 = {
+1597.10.25 = {
 	battle = {
-		name = "Myeongnyang"
+		name = "Battle of Myeongnyang" #명량해전
 		location = 1376
 		defender = {
 			commander = "Yi Sun-sin"	# Yi Sun-sin
@@ -195,6 +262,27 @@ war_goal = {
 			commander = "Todo Takatora"	# Todo Takatora
 			heavy_ship = 133
 			light_ship = 200
+			losses = 9	# percent
+			country = ODA
+		}
+		result = no
+	}
+}
+
+1598.12.16 = {
+	battle = {
+		name = "Battle of Myeongnyang" #노량해전
+		location = 1376
+		defender = {
+			commander = "Yi Sun-sin"	# Yi Sun-sin
+			heavy_ship = 360
+			losses = 0	# percent
+			country = KOR
+		}
+		attacker = {
+			commander = "Todo Takatora"	# Todo Takatora
+			heavy_ship = 200
+			light_ship = 300
 			losses = 9	# percent
 			country = ODA
 		}
