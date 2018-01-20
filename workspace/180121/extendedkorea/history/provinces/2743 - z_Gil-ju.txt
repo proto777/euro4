@@ -1,0 +1,28 @@
+#2742 - Gil-ju
+
+owner = KOR
+controller = KOR
+culture = korean
+religion = confucianism
+capital = "Gil-ju"
+trade_goods = livestock
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 1
+is_city = yes
+add_core = KOR
+add_core = MJZ
+discovered_by = chinese
+discovered_by = nomad_group
+add_local_autonomy = 25
+
+1542.1.1 = { discovered_by = POR }
+1592.8.25 = { controller = ODA }#날짜 불명 가토 함경도 장악(함경도 반란 및 여진이 가세)
+1593.2.28 = { controller = KOR } #북관대첩 정문부정현룡5000VS가토 기요마사,가토 우마노조22000 조선승
+#차례로 일어났으나 한번에 처리 https://ko.wikipedia.org/wiki/%EB%B6%81%EA%B4%80%EB%8C%80%EC%B2%A9
+1637.1.1 = { add_core = MNG } # Tributary of Qing China
+1644.1.1 = { add_core = MCH remove_core = MNG } # Part of the Manchu empire
+1645.7.1 = { add_core = QNG remove_core = MCH }
+1653.1.1 = { discovered_by = NED } # Hendrick Hamel
+1739.1.1 = { discovered_by = RUS } # Martin Spanberg
