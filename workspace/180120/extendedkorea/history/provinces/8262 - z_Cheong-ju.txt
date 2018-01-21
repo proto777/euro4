@@ -1,0 +1,25 @@
+#8262 - Cheong-ju
+
+owner = KOR
+controller = KOR
+culture = korean
+religion = confucianism
+capital = "Cheong-ju"
+trade_goods = spices
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 3
+is_city = yes
+add_core = KOR
+fort_15th = no
+discovered_by = chinese
+discovered_by = nomad_group
+
+1542.1.1 = { discovered_by = POR }
+1592.6.7 = { controller = ODA }#추풍령전투(6.7)
+1592.9.6 = { controller = KOR }#청주성 전투(9.6) 의병장 조헌,승려 영규(1000/500) 하치스카 이에마사(7200) 
+1637.1.1 = { add_core = MNG } # Tributary of Qing China
+1644.1.1 = { add_core = MCH remove_core = MNG } # Part of the Manchu empire
+1645.7.1 = { add_core = QNG remove_core = MCH }
+1653.1.1 = { discovered_by = NED } # Hendrick Hamel
