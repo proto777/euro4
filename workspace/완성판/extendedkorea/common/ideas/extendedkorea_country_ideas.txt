@@ -1,0 +1,44 @@
+# This file contains the default idea group in order to make sure it is loaded last.
+
+SOO_ideas = {
+	start = {
+		loot_amount = 0.5
+		light_ship_cost = -0.5
+	}
+	
+	bonus = {
+		naval_morale = 0.2
+	}
+	
+	trigger = {
+		tag = SOO
+	}
+	free = yes
+	
+	soo_wokou_pirates_base = {
+        privateer_efficiency = 0.5
+		light_ship_power = 0.25
+	}
+	soo_segyeonseon = {
+		trade_efficiency = 0.1
+		navy_tradition = 1.0
+	}
+	soo_independent_vassal_of_joseon = {
+		diplomatic_reputation = 0.5
+		prestige = 0.5
+	}
+	soo_trade_through_tsushima = {
+		merchants = 1
+	}
+	soo_izuhara_castle = {
+		defensiveness = 0.15
+		global_unrest = -1
+	}
+	soo_joseon_tongsinsa = {
+		diplomatic_upkeep = 1
+		diplomats = 1
+	}
+	soo_patronization_of_the_west = {
+		technology_cost = -0.05
+	}
+}

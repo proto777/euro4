@@ -1,0 +1,302 @@
+name = "Imjin War" #Ex_KOR Mod
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 8282 # 경상도 부산 침략
+}
+
+1592.5.23 = {
+	add_attacker = ODA
+	add_attacker = SMZ
+	add_attacker = MRI
+	add_attacker = CSK
+	add_attacker = SOO #SOO Im-jin War
+	add_defender = KOR
+}
+
+1592.5.24 = {
+	battle = {
+		name = "Siege of Bu-san-jin" #부산진 전투
+		location = 8282
+		attacker = {
+			commander = "Konishi Yukinaga"
+			infantry = 18700
+			transport = 700
+			losses = 5	# percent
+			country = ODA
+		}
+		defender = {
+			commander = "Jeong Bal"
+			infantry = 3000 #군병800/민병2200
+			losses = 90	# percent
+			country = KOR
+		}
+		result = yes
+	}
+}
+
+1592.5.25 = {
+	battle = {
+		name = "Siege of Dong-rae" #동래성 전투
+		location = 8282
+		attacker = {
+			commander = "Konishi Yukinaga"
+			infantry = 30000
+			losses = 15	# percent
+			country = ODA
+		}
+		defender = {
+			commander = "Jeong Bal"
+			infantry = 20000 #군병2500-3000/민병15000
+			losses = 80	# percent
+			country = KOR
+		}
+		result = yes
+	}
+}
+
+1592.6.3 = {
+	battle = {
+		name = "Battle of Sang-ju" #상주 전투
+		location = 736
+		attacker = {
+			commander = "Konishi Yukinaga"
+			infantry = 18700
+			losses = 1	# percent
+			country = ODA
+		}
+		defender = {
+			commander = "Yi Il"
+			infantry = 800 #군병2500-3000/민병15000
+			losses = 95	# percent
+			country = KOR
+		}
+		result = yes
+	}
+}
+
+1592.6.7 = {
+	battle = {
+		name = "Battle of Tan-geum-dae" #탄금대 전투
+		location = 4229
+		attacker = {
+			commander = "Konishi Yukinaga"
+			infantry = 18700
+			losses = 3	# percent
+			country = ODA
+		}
+		defender = {
+			commander = "Shin Rip"
+			infantry = 16000
+			losses = 38	# percent
+			country = KOR
+		}
+		result = yes
+	}
+}
+
+1592.6.16 = {
+	battle = {
+		name = "Battle of Ok-po" #옥포해전 이순신 첫 전투
+		location = 1376
+		defender = {
+			commander = "Yi Sun-sin"	# Yi Sun-sin
+			heavy_ship = 27
+			light_ship = 18
+			losses = 0	# percent
+			country = KOR
+		}
+		attacker = {
+			commander = "Todo Takatora"	# Todo Takatora
+			heavy_ship = 5
+			light_ship = 45
+			losses = 80	# percent
+			country = ODA
+		}
+		result = no
+	}
+}
+
+1592.7.1 = {
+	add_defender = MNG
+}
+
+1592.7.7 = {
+	battle = {
+		name = "Battle of Im-jin River" #임진강 전투
+		location = 8243
+		attacker = {
+			commander = "Kato Kiyomasa"	
+			infantry = 22800
+			losses = 5	# percent
+			country = ODA
+		}
+		defender = {
+			commander = "Kim Myeong-won"
+			infantry = 13000
+			losses = 40	# percent
+			country = KOR
+		}
+		result = yes
+	}
+}
+
+1592.7.21 = {
+	battle = {
+		name = "Siege of Pyeong-yang" #1차 평양성 전투
+		location = 1845
+		attacker = {
+			commander = "Konishi Yukinaga"
+			infantry = 18700
+			losses = 5	# percent
+			country = ODA
+		}
+		attacker = {
+			commander = "Yi Hon"
+			infantry = 4000 #3-4000
+			losses = 75	# percent
+			country = KOR
+		}
+		result = yes
+	}
+}
+
+1592.8.14 = {
+	battle = {
+		name = "Battle of Han-san Island" #한산도 대첩
+		location = 1376
+		defender = {
+			commander = "Yi Sun-sin"	# Yi Sun-sin
+			heavy_ship = 56
+			losses = 0	# percent
+			country = KOR
+		}
+		attacker = {
+			commander = "Wakisaka Yasuharu"	# Wakisaka Yasuharu
+			heavy_ship = 60
+			light_ship = 13
+			losses = 84	# percent
+			country = ODA
+		}
+		result = no
+	}
+}
+
+1593.2.6 = {
+	battle = {
+		name = "Siege of Pyeong-yang" #4차 평양성 전투
+		location = 1845
+		defender = {
+			commander = "Konishi Yukinaga"
+			infantry = 15000
+			losses = 75	# percent
+			country = ODA
+		}
+		attacker = {
+			commander = "Li Rusong"
+			infantry = 43000 #명원군43000
+			losses = 5	# percent
+			country = MNG
+		}
+		attacker = {
+			commander = "Ryu Seong-ryong"
+			infantry = 10200 #조선군8000/승려병2200
+			losses = 15	# percent
+			country = KOR
+		}
+		result = yes
+	}
+}
+
+1593.2.27 = {
+	battle = {
+		name = "Battle of Byeok-je-gwan" #벽제관 전투
+		location = 8243
+		attacker = {
+			commander = "Li Rusong"
+			infantry = 43000
+			losses = 35	# percent
+			country = MNG
+		}
+		defender = {
+			commander = "Ukita Hideie"
+			infantry = 71000
+			losses = 8	# percent
+			country = ODA
+		}
+		result = yes
+	}
+}
+
+1597.8.28 = {
+	battle = {
+		name = "Battle of Chil-cheon-ryang" #칠천량 해전
+		location = 1376
+		attacker = {
+			commander = "Todo Takatora"	# Todo Takatora
+			heavy_ship = 60
+			losses = 1	# percent
+			country = ODA
+		}
+		defender = {
+			commander = "Won Gyan"	# Won Gyan
+			heavy_ship = 183
+			losses = 93	# percent
+			country = KOR
+		}
+		result = yes
+	}
+}
+
+1597.10.25 = {
+	battle = {
+		name = "Battle of Myeong-ryang" #명량해전
+		location = 1376
+		defender = {
+			commander = "Yi Sun-sin"	# Yi Sun-sin
+			heavy_ship = 13
+			losses = 0	# percent
+			country = KOR
+		}
+		attacker = {
+			commander = "Todo Takatora"	# Todo Takatora
+			heavy_ship = 133
+			light_ship = 200
+			losses = 9	# percent
+			country = ODA
+		}
+		result = no
+	}
+}
+
+1598.12.16 = {
+	battle = {
+		name = "Battle of No-ryang" #노량해전
+		location = 1376
+		defender = {
+			commander = "Yi Sun-sin"	# Yi Sun-sin
+			heavy_ship = 360
+			losses = 0	# percent
+			country = KOR
+		}
+		attacker = {
+			commander = "Todo Takatora"	# Todo Takatora
+			heavy_ship = 200
+			light_ship = 300
+			losses = 9	# percent
+			country = ODA
+		}
+		result = no
+	}
+}
+
+# The Japanese troops withdraw
+1598.12.24 = {
+	rem_attacker = ODA
+	rem_attacker = SMZ
+	rem_attacker = MRI
+	rem_attacker = CSK
+	rem_attacker = SOO #MOD SOO Im-jin War
+	rem_defender = KOR
+	rem_defender = MNG
+}

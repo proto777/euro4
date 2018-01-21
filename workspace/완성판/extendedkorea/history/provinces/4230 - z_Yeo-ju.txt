@@ -1,0 +1,27 @@
+#4230 - Yeo-ju
+
+owner = KOR
+controller = KOR
+culture = korean
+religion = confucianism
+capital = "Yeo-ju"
+trade_goods = chinaware
+hre = no
+base_tax = 3
+base_production = 2
+base_manpower = 3
+is_city = yes
+add_core = KOR
+discovered_by = chinese
+discovered_by = nomad_group
+
+1542.1.1 = { discovered_by = POR } # Tome Pires
+1592.6.11 = { controller = ODA unrest = 5 } # 충주,여주,양근(6.11) 함락
+1593.1.13 = { controller = KOR unrest = 0 } # 독성산성(지금의 오산) 전투 조선벙어승리 권율,선거이1만VS우키타히데이에2~3만
+1593.5.20 = { controller = KOR unrest = 0 } # 기존 정보 수정(임진왜란)
+#https://ko.wikipedia.org/wiki/%EB%8F%85%EC%84%B1%EC%82%B0%EC%84%B1_%EC%A0%84%ED%88%AC
+#경기도 일부 수복(여주는 잘모르겠으나 돌려줘봄)
+1637.1.1 = { add_core = MNG } # Tributary of Qing China
+1644.1.1 = { add_core = MCH remove_core = MNG } # Part of the Manchu empire
+1645.7.1 = { add_core = QNG remove_core = MCH }
+1653.1.1 = { discovered_by = NED } # Hendrick Hamel

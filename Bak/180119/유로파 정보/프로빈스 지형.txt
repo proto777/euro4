@@ -1,0 +1,44 @@
+
+2742 육진 hills 구릉지
+2743 길주 mountain 산지
+732 함흥 highlands 고원
+8224 영흥 highlands 고원
+
+4232 사군 mountain 산지
+1845 평양 farmlands 농경지
+2744 의주 grasslands 초원
+8214 정주 grasslands 초원
+8212 영변 hills 구릉지
+8213 안주 grasslands 초원
+
+2694 강릉 highlands 고원
+734 원주 hills 구릉지
+
+733 해주 grasslands 초원
+4231 황주 mountain 산지
+
+8202 개성 highlands 고원
+735 한성 farmlands 농경지
+8203 강화 coastline 해안지대
+4230 여주 farmlands 농경지
+8241 광주 farmlands 농경지
+8244 양주 hills 구릉지
+8243 파주 grasslands 초원
+
+8262 청주 mountain 산지
+1013 홍주 coastline 해안지대
+8263 공주 hills 구릉지
+4229 충주 grasslands 초원
+
+737 전주 farmlands 농경지
+4228 나주 coastline 해안지대
+8272 광주 grasslands 초원
+2741 제주 coastline 해안지대
+
+2745 경주 farmlands 농경지
+4227 진주 farmlands 농경지
+736 상주 hills 구릉지
+8283 안동 mountain 산지
+8286 성주 grasslands 초원
+8282 창원 coastline 해안지대
+8204 대마 coastline 해안지대
