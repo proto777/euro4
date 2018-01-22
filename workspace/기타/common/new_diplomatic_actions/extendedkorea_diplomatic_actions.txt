@@ -1,7 +1,7 @@
 ask_for_diplomatic_rights = {
 	category = influence
 	
-	alert_index = 30
+	alert_index = 50
 	alert_tooltip = ask_for_diplomatic_rights_alert_tooltip
 	
 	require_acceptance = yes # Whether the recipient gets an option to decline
@@ -159,7 +159,7 @@ ask_for_diplomatic_rights = {
 offer_diplomatic_rights = {
 	category = influence
 	
-	alert_index = 30
+	alert_index = 51
 	alert_tooltip = offer_diplomatic_rights_alert_tooltip
 	
 	require_acceptance = yes # Whether the recipient gets an option to decline
@@ -247,7 +247,7 @@ offer_diplomatic_rights = {
 abandon_diplomatic_rights = {
 	category = influence
 	
-	alert_index = 30
+	alert_index = 52
 	alert_tooltip = abandon_diplomatic_rights_alert_tooltip
 	
 	require_acceptance = yes # Whether the recipient gets an option to decline

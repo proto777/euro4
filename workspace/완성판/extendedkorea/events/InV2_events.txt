@@ -10,7 +10,7 @@ country_event = {
 	trigger = {
 		tag = MOS
 		is_year = 1300
-		# subject_of = GOL
+		# is_subject_of = GOL 필요없는 것
 		NOT = { is_year = 1460 }
 	}
 
@@ -52,7 +52,7 @@ country_event = {
 	trigger = {
 		tag = KHA
 		is_year = 1439
-		# subject_of = OIR
+		is_subject_of = OIR
 		NOT = { is_year = 1453 }
 	}
 
@@ -62,6 +62,10 @@ country_event = {
 
 	option = {
 		name = "InVH.EVTOPTA91"
+		add_opinion = {
+			who = OIR
+			modifier = strong_distrust
+		}
 		OIR = {
 			create_subject = {
 				subject_type = independent_vassal
@@ -89,7 +93,7 @@ country_event = {
 	# trigger = {
 		# tag = SOO
 		# is_year = 1443
-		# subject_of = KOR
+		# is_subject_of = KOR
 		# NOT = { is_year = 1445 }
 	# }
 

@@ -1,10 +1,20 @@
+independent_vassal = {}
+
 independent_vassal = {
 	copy_from = vassal
 	count = vassal
 	
-	use_march_ui = yes
-	construct_march = yes
-
+	# use_march_ui = yes 알 수 없는 변수
+	# construct_march = yes 알 수 없는 변수
+	
+	# Triggers:
+	is_potential_overlord = {
+		has_dlc = "Mandate of Heaven"
+		NOT = { 
+			is_subject_of_type = independent_vassal
+		}
+	}
+	
 	# Properties:
 	transfer_trade_power = yes
 	joins_overlords_wars = yes
@@ -23,17 +33,11 @@ independent_vassal = {
 	overlord_enforce_peace_attacking = yes
 	can_fight_independence_war = no
 	can_be_annexed = no
-
-	# Subject Interactions:
-	enforce_religion = no
-	enforce_culture = no
-	seize_territory = no
-	place_relative_on_throne = no
-
+	
 	liberty_desire_development_ratio = 0.10
 	pays_overlord = 1.0
 	trust_on_start = 0
-
+	
 	can_fight = {
 		independent_nations = yes
 		other_overlord = all
@@ -54,9 +58,22 @@ independent_vassal = {
 		other_overlord = all
 		same_overlord = independent_vassal
 	}
+	
+	# Subject Interactions:
+	enforce_religion = no
+	enforce_culture = no
+	seize_territory = no
+	place_relative_on_throne = no
 
 	modifier_overlord = clear
 	modifier_subject = clear
+	
+	modifier_subject = {
+		modifier = null_modifier
+	}
+	modifier_overlord = {
+		modifier = null_modifier
+	}
 
 	overlord_opinion_modifier = is_ind._vassal
 	subject_opinion_modifier = is_ind._vassal
