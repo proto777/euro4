@@ -20,16 +20,12 @@ cb_independence_war = {
 
 	prerequisites = {
 		is_subject_other_than_tributary_trigger = yes
-		#MOD 독립 봉신
-		OR = {
-			NOT = { is_subject_of_type = independent_vassal }
-			ai = yes
-		}
 		is_subject_of = FROM
 		NOT = { is_colonial_nation_of = FROM }
 		OR = {
 			NOT = { government = daimyo }
 			NOT = { from = { government = shogunate } }
+			NOT = { is_subject_of_type = independent_vassal } #MODED
 		}
 		is_revolution_target = no
 	}
