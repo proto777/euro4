@@ -1,0 +1,13 @@
+1. 독립 봉신 버그 수정
+- common\new_diplomatic_actions\02_influence.txt 최적화 및 수정
+- common\subject_types\extendedkorea_subject_types.txt 최적화 및 수정
+- localisation\zz_extendedkorea_etc_l_english.yml 오류 수정
+- 전반적인 모든 버그 수정 완료 But)자체적 더미 버그는 현재로서는 수정 불가
+2. 작업 공간 개선 완료
+- workspace에 00~05까지 카테고리로 구성
+- 가독성 및 작업 효율 개선을 위해 작업함
+- 00:전달사항 01:기초 정보 열람 02:작업공간 03:언어파일 보관 04:테스트용 완성판 05:임시 데이터 보관
+3. 류큐
+- gfx\flags\RYU.tga 문양 국가 색에 맞게 수정 (기존 자료는 05_임시보관 참조)
+4. 지역 명칭
+- common\province_names\chihan.txt 조선 지역의 중국 명칭 수정
