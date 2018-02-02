@@ -1,0 +1,74 @@
+# 도요토미 히데요시의 규슈 정복
+# Toyotomi Hideyoshi's Kyushu conquest
+country_event = {
+	id = EK.006
+	title = "EK.EVTNAME006"
+	desc = "EK.EVTDESC006"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ODA
+		# government = shogunate
+		# is_year = 1586
+		# NOT = { is_year = 1587 }
+		# NOT = { has_country_flag = event_kyushu_conquest_had }
+	}
+	
+	immediate = {
+		hidden_effect = {
+			every_country = {
+				limit = {
+					primary_culture = kyushuan
+				}
+				set_country_flag = Kyushu_conquest_daimyo
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "EK.EVTOPTA006"
+		# set_country_flag = event_kyushu_conquest_had
+		every_country = {
+			limit = {
+				has_country_flag = Kyushu_conquest_daimyo 
+			}
+			declare_war_with_cb = {
+				who = FROM
+				casus_belli = cb_conquest
+			}
+		}
+	}
+	
+	option = {
+		name = "EK.EVTOPTB006"
+		# set_country_flag = event_kyushu_conquest_had
+		every_country = {
+			limit = {
+				has_country_flag = Kyushu_conquest_daimyo 
+			}
+			add_opinion = {
+				who = FROM
+				modifier = strong_distrust
+			}
+			FROM = {
+				create_subject = {
+					subject_type = independent_vassal
+					subject = ROOT
+				}
+				hidden_effect = {
+					add_opinion = {
+						who = ROOT
+						modifier = strong_distrust
+					}
+					ROOT = { add_liberty_desire = -30 }
+				}
+			}
+		}
+	}
+}
