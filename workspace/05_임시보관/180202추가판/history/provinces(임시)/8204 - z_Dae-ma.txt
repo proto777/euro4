@@ -1,0 +1,31 @@
+#8204 - Dae-ma
+
+add_core = SOO
+owner = SOO
+controller = SOO
+culture = kyushuan
+religion = mahayana
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = fish
+capital = "Tsushima"
+is_city = yes
+fort_15th = yes
+
+discovered_by = chinese
+discovered_by = MCH
+discovered_by = KHA
+discovered_by = OIR
+discovered_by = QNG
+
+add_permanent_province_modifier = {
+	name = center_of_trade_modifier
+	duration = -1
+}
+
+1419.6.19 = { controller = KOR }
+1420.1.1 = { add_core = KOR }
+1443.1.1 = { controller = SOO }
+1542.1.1   = { discovered_by = POR } # Tome Pires

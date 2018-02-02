@@ -1,0 +1,46 @@
+#8286 - Seong-ju
+
+owner = KOR
+controller = KOR
+culture = korean
+religion = confucianism
+capital = "Seong-ju"
+trade_goods = grain
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 4
+is_city = yes
+add_core = KOR
+fort_15th = no
+discovered_by = chinese
+discovered_by = nomad_group
+
+1542.1.1 = { discovered_by = POR } # Tome Pires
+1592.6.6 = { controller = ODA unrest = 5 } # 성주(6.6) 함락
+
+#하시바 히데카스가 주둔하였으나 1592.9.16 제7군단 모리 테루모토의 부장 가쓰라 모토쓰나 외 1만 군세로 교대
+#경상 우도에서 곽재우와 김면에게 패한 일본군이 성주성에 모여 약 2만에 병력이 모임
+#김성일이 일본군 보급로 차단을 위해 성주성 점령을 종용
+#양력 1592.9.26 정인홍,김면의 2만 운봉,구례관군 및 의병과 합세하여 합천과 고령을 지나 27일 성주성에 도착
+#조선군의 병사가 수만이라는 것을 알고는 일본군의 가쓰라가 개령의 모리에게 증원을 요청
+#정인홍,김면 2만관군 및 의병 VS 가쓰라 모토쓰나 2만 + 모리 증원군
+#조선군은 27일 공성기구를 만들어 성을 공격하려 하나 일본증원군이 도착
+#조선군은 성주성과 일본증원군에게 협공을 당하여 사기가 꺾여 후퇴
+#성주성 1차 탈환 작전 실패 음력 1592.8.22 양력 1592.9.27 
+
+#2차전투에서는 김성일의 개입이 없어 관군의 지원이 없었음
+#정인홍과 김면은 합천군수 배설과 합천 가장 김준민을 설득하여 성주전투에 개입하게 함
+#하루종일 성을 공격하였으나 일본군이 나오지 않고 성을 사수
+#의병장들은 적의 증원군을 대비해 관군에게 매복을 요청하였고 배설 등이 의병의 요청을 거절 후 이탈
+#위는 배설과 관련되어 논란이 있는 부분이라고 하여 조심스러울 것
+#조선군의 사기가 꺾였고 
+#성주성 2차 탈환 작전 실패 음력 1592.9.10 양력 1592.10.14
+
+#성주성 3차 탈환 작전 실패 음려 1592.12.7 양력 1593.1.9
+1593.2.15 = { controller = KOR unrest = 0 }#일본군이 성주성이 전략적 가치가 없자 버림(2.15)
+#성주전투 참고자료 https://blog.naver.com/hind1204/15033405
+1637.1.1 = { add_core = MNG } # Tributary of Qing China
+1644.1.1 = { add_core = MCH remove_core = MNG } # Part of the Manchu empire
+1645.7.1 = { add_core = QNG remove_core = MCH }
+1653.1.1 = { discovered_by = NED } # Hendrick Hamel

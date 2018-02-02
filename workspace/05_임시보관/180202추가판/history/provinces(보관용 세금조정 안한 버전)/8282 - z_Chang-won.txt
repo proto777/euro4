@@ -1,0 +1,26 @@
+#8282 - Chang-won
+
+owner = KOR
+controller = KOR
+culture = korean
+religion = confucianism
+capital = "Chang-won"
+trade_goods = chinaware
+hre = no
+base_tax = 3
+base_production = 5
+base_manpower = 4
+is_city = yes
+add_core = KOR
+fort_15th = no
+discovered_by = chinese
+discovered_by = nomad_group
+
+1542.1.1 = { discovered_by = POR } # Tome Pires
+#1592.5.23 임진왜란 개전
+1592.5.28 = { controller = ODA unrest = 5 } #부산진(5.23),다대포(5.23),동래(5.23),양산(5.27),밀양(5.28),김해(5.30),창원(5.31) 함락
+
+1637.1.1 = { add_core = MNG } # Tributary of Qing China
+1644.1.1 = { add_core = MCH remove_core = MNG } # Part of the Manchu empire
+1645.7.1 = { add_core = QNG remove_core = MCH }
+1653.1.1 = { discovered_by = NED } # Hendrick Hamel

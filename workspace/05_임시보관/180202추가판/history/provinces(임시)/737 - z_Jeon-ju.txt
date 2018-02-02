@@ -1,0 +1,31 @@
+#737 - Jeon-ju
+
+owner = KOR
+controller = KOR
+culture = korean
+religion = confucianism
+capital = "Jeon-ju"
+trade_goods = paper
+hre = no
+base_tax = 2
+base_production = 3
+base_manpower = 2
+is_city = yes
+add_core = KOR
+discovered_by = chinese
+discovered_by = nomad_group
+
+1542.1.1 = { discovered_by = POR } # Tome Pires
+1597.9.26 = { controller = KOR unrest = 0 } # 기존 정보 수정(임진왜란)
+1597.11.1 = { controller = KOR unrest = 0 } # 기존 정보 수정(임진왜란)
+#1592.7.31 금산성 함락
+#1592.8.13 웅치(지금의 완주진안일대)(8.13)전투 정담7000 고바야카와 다카카게,안코쿠지 에케이1만 패배
+#1592.8.14 이치(지금의 충남 금산 당시 전라도 소속)(8.14)전투 권율,황진  고바야카와 다카카게 승리
+#1592.8.15 의병장 고경명,관군 곽영 금산성 탈환작전 실패 대신 웅치 함락 후 전주성을 포위하던 왜군 제1대와 웅치에서 교전중이던 
+#제2대가 금산으로 회군, 고바야카와의 지원부대 1500 거창 우척현에서 매복 중이던 김면,정인홍의 의병부대2000에 막힘
+#1592.9.23 의병장 조헌,승려 영규(700/600) 금산성공격 패배
+#1592.10.20 왜군 금산성을 포기하고 옥천 그리고 하루 후 성주로 퇴각
+1637.1.1 = { add_core = MNG } # Tributary of Qing China
+1644.1.1 = { add_core = MCH remove_core = MNG } # Part of the Manchu empire
+1645.7.1 = { add_core = QNG remove_core = MCH }
+1653.1.1 = { discovered_by = NED } # Hendrick Hamel
