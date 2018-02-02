@@ -1,0 +1,119 @@
+#Tartar Yoke
+country_event = {
+	id = InVH.90
+	title = "InVH.EVTNAME90"
+	desc = "InVH.EVTDESC90"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MOS
+		is_year = 1300
+		# is_subject_of = GOL 필요없는 것
+		NOT = { is_year = 1460 }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "InVH.EVTOPTA90"
+		add_opinion = {
+			who = GOL
+			modifier = strong_distrust
+		}
+		GOL = {
+			create_subject = {
+				subject_type = independent_vassal
+				subject = ROOT
+			}
+			hidden_effect = {
+				add_opinion = {
+					who = ROOT
+					modifier = strong_distrust
+				}
+				ROOT = { add_liberty_desire = -30 }
+			}
+		}
+	}
+}
+
+#Rule of Esen Taishi
+country_event = {
+	id = InVH.91
+	title = "InVH.EVTNAME91"
+	desc = "InVH.EVTDESC91"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = KHA
+		is_year = 1439
+		is_subject_of = OIR
+		NOT = { is_year = 1453 }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "InVH.EVTOPTA91"
+		add_opinion = {
+			who = OIR
+			modifier = strong_distrust
+		}
+		OIR = {
+			create_subject = {
+				subject_type = independent_vassal
+				subject = ROOT
+			}
+			hidden_effect = {
+				add_opinion = {
+					who = ROOT
+					modifier = strong_distrust
+				}
+			}
+		}
+	}
+}
+
+# #Treaty of Gyehae
+# country_event = {
+	# id = EXTKOR.00000
+	# title = "EXTKOR.EVTNAME00000"
+	# desc = "EXTKOR.EVTDESC00000"
+	# picture = COURT_eventPicture
+
+	# fire_only_once = yes
+
+	# trigger = {
+		# tag = SOO
+		# is_year = 1443
+		# is_subject_of = KOR
+		# NOT = { is_year = 1445 }
+	# }
+
+	# mean_time_to_happen = {
+		# months = 1
+	# }
+
+	# option = {
+		# name = "EXTKOR.EVTOPTA00000"
+		# KOR = {
+			# create_subject = {
+				# subject_type = independent_vassal
+				# subject = ROOT
+			# }
+			# hidden_effect = {
+				# add_opinion = {
+					# who = ROOT
+					# modifier = strong_distrust
+				# }
+			# }
+		# }
+	# }
+# }

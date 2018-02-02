@@ -1,0 +1,25 @@
+#734 - Won-ju
+
+owner = KOR
+controller = KOR
+culture = korean
+religion = confucianism
+capital = "Won-ju"
+trade_goods = livestock
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 2
+is_city = yes
+add_core = KOR
+discovered_by = chinese
+discovered_by = nomad_group
+
+1542.1.1 = { discovered_by = POR } # Tome Pires
+1592.9.30 = { controller = ODA unrest = 5 }#김제갑김시백 군민4000 VS 모리 요시나리3000 
+1593.5.20 = { controller = KOR unrest = 0 } # 진격로 맞추기
+#강원도에서 유일하게 백성을 보두 피난시킴, 70세 노장 김제갑과 둘째아들 김시백 전사
+1637.1.1 = { add_core = MNG } # Tributary of Qing China
+1644.1.1 = { add_core = MCH remove_core = MNG } # Part of the Manchu empire
+1645.7.1 = { add_core = QNG remove_core = MCH }
+1653.1.1 = { discovered_by = NED } # Hendrick Hamel

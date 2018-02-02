@@ -1,0 +1,6 @@
+#8205 - Baek-du-dae-gan
+
+discovered_by = chinese
+discovered_by = nomad_group
+
+1542.1.1 = { discovered_by = POR } # Tome Pires

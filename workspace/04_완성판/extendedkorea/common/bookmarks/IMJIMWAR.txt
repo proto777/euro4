@@ -1,0 +1,17 @@
+bookmark =
+{
+	name = "IMJIMWAR_BOOKMARK_NAME"
+	desc = "IMJIMWAR_BOOKMARK_DESC"
+	date = 1592.5.23
+	
+	center = 8282
+	
+	country = KOR
+	country = MNG
+	country = ODA
+	country = SMZ
+	country = MRI
+	country = CSK
+	country = SOO
+	
+}

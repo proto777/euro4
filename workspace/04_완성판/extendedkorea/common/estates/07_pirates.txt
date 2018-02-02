@@ -1,0 +1,659 @@
+estate_pirates = {
+	icon = 11
+	
+	color = { 95 180 200 }
+		
+	# Is estate kept in control of province on conquest?
+	keep_on_conquest = no
+	always_remove_on_religious_conquest = yes
+
+	# If true, country will get estate
+	trigger = {	
+		has_country_flag = pirates_release
+	}
+	
+	# If true, province can be granted to estate
+	province_trigger = {
+		always = yes
+	}	
+	
+	# They want to control at least this % of the country's non-overseas development, if # of home provinecs is above set amount
+    min_territory = 0                                 
+    min_provinces_to_want_territory = 5    
+	wanted_territory_modifier = {
+		desc = EST_TOTAL_DEVELOPMENT
+		trigger = {
+			total_development = 200
+			NOT = { total_development = 400 }
+		}
+		value = 5		
+	}
+	wanted_territory_modifier = {
+		desc = EST_TOTAL_DEVELOPMENT
+		trigger = {
+			total_development = 400
+			NOT = { total_development = 600 }
+		}
+		value = 10			
+	}
+	wanted_territory_modifier = {
+		desc = EST_TOTAL_DEVELOPMENT
+		trigger = {
+			total_development = 600
+			NOT = { total_development = 800 }
+		}
+		value = 15			
+	}	
+	wanted_territory_modifier = {
+		desc = EST_TOTAL_DEVELOPMENT
+		trigger = {
+			total_development = 800
+			NOT = { total_development = 1000 }
+		}
+		value = 20	
+	}		
+	wanted_territory_modifier = {
+		desc = EST_TOTAL_DEVELOPMENT
+		trigger = {
+			total_development = 1000
+		}
+		value = 25		
+	}	
+	
+	# Giving territory affects power this much compared to base
+	territory_power_modifier = 0.1
+	
+	# Min autonomy in estate provinces
+	min_autonomy = 50
+	
+	# Estate cancels out the following multiplicative local autonomy effects:
+	autonomy_does_not_affect = local_manpower_modifier
+	autonomy_does_not_affect = land_forcelimit_modifier
+
+	# These scale with loyalty & power
+    country_modifier_happy = {
+        privateer_efficiency = 1
+        raze_power_gain = 1
+    }
+    country_modifier_neutral = {
+        privateer_efficiency = 0.5
+    }    
+    country_modifier_angry = {
+        privateer_efficiency = -1
+        raze_power_gain = -1
+    }  
+	
+	# These do not scale, but only applied in provinces owned by the estate
+	province_modifier_happy = {
+        local_manpower_modifier = 0.5
+		local_unrest = -2
+	}
+	province_modifier_neutral = {
+        local_manpower_modifier = 0.25
+	}	
+	province_modifier_angry = {
+        local_manpower_modifier = -0.5
+		local_unrest = 5
+	}		
+	
+	# Influence modifiers
+    base_influence = 30
+	
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_burghers_disaster
+			}
+		}	
+		influence = -20
+	}
+	
+    influence_modifier = {
+        desc = EST_VAL_OTHER_ESTATE_IN_POWER
+        trigger = {
+            OR = {
+                has_country_flag = noble_estate_in_power
+                has_country_flag = burghers_estate_in_power
+            }
+        }
+        influence = -20
+    }
+    
+    # ----- Loyalty -----
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_burghers_disaster
+			}
+		}
+		loyalty = -5
+	}
+	
+    loyalty_modifier = {
+        desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+        trigger = {
+            OR = {
+                has_country_flag = noble_estate_in_power
+                has_country_flag = burghers_estate_in_power
+            }
+        }
+        loyalty = -5
+    }
+	
+	loyalty_modifier = {
+		desc = EST_VAL_NOBLE_CONSORT
+		trigger = {
+			has_dlc = "Rights of Man"
+			has_consort = yes
+			is_origin_of_consort = ROOT
+		}
+		loyalty = 5
+	}
+	
+	loyalty_modifier = {
+		desc = EST_VAL_JUNKERS
+		trigger = {
+			government = indep_daimyo
+		}
+		loyalty = 10
+	}
+	
+	#Alternative naming of estates
+	custom_name = {
+		desc = estate_wokou
+		trigger = {
+			culture_group = japanese_g
+		}
+	}
+	
+	# For province assignment
+	ai_grant_province = {
+		factor = 1	
+		modifier = {
+			factor = 0.5
+			development = 20
+		}
+		modifier = {
+			factor = 2
+			NOT = { development = 10 }
+		}
+        modifier = {
+            factor = 0.75
+            has_owner_culture = yes
+        }
+        modifier = {
+            factor = 0.75
+            province_trade_power = 5
+        }            
+        modifier = {
+            factor = 0.75
+            province_trade_power = 10
+        }
+		modifier = {
+			factor = 4
+			local_autonomy = 25
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { local_autonomy = 25 }
+		}
+	}	
+	
+	#Special Interactions
+    # Exhort Strength
+    interaction = {
+        name = "EXHORT_STRENGTH"
+        icon = 4
+        
+        years_between_use = 20
+        
+        potential = { }
+        
+        trigger = {        
+            estate_loyalty = {
+                estate = estate_pirates
+                loyalty = 30
+            }    
+            estate_influence = {
+                estate = estate_pirates
+                influence = 25
+            }            
+        }
+        
+        effect = {
+			add_scaled_adm_power = { ESTATE = estate_pirates }
+			add_scaled_dip_power = { ESTATE = estate_pirates }
+			add_scaled_mil_power = { ESTATE = estate_pirates }
+            
+            add_estate_loyalty = {
+                estate = estate_pirates
+                loyalty = -30
+            }
+        }
+        
+        ai_will_do = {
+            factor = 0        
+        }
+    }
+    
+    # Throw Feast
+    interaction = {
+        name = "THROW_FEAST"
+        icon = 7
+        
+        years_between_use = 10
+        
+        potential = { }
+        
+        trigger = {
+            always = yes
+        }
+        
+        effect = {
+            add_years_of_income = -0.5
+            
+            add_estate_loyalty = {
+                estate = estate_pirates
+                loyalty = 15
+            }
+        }
+        
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                NOT = { years_of_income = 0.5 }                
+            }
+            modifier = {
+                factor = 0
+                estate_loyalty = {
+                    estate = estate_pirates
+                    loyalty = 40
+                }
+            }            
+        }        
+    }
+    
+    # Assemble Clans
+    interaction = {
+        name = "ASSEMBLE_CLANS"
+        icon = 1
+        
+        years_between_use = 20
+        
+        trigger = {
+            always = yes
+        }
+        
+        effect = {
+            add_estate_loyalty = {
+                estate = estate_pirates
+                loyalty = 15
+            }
+            
+            add_estate_influence_modifier = {
+                estate = estate_pirates
+                desc = EST_VAL_ASSEMBLED_CLANS
+                influence = 10
+                duration = 7300
+            }
+        }
+    
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                estate_loyalty = {
+                    estate = estate_pirates
+                    loyalty = 30
+                }                        
+            }
+            modifier = {
+                factor = 0
+                estate_influence = {
+                    estate = estate_pirates
+                    influence = 60
+                }                        
+            }            
+        }
+    }
+    
+    # Recruit Quartermaster
+    interaction = {
+        name = "RECRUIT_QUARTERMASTER"
+        icon = 10
+        
+        potential = { }
+        
+        years_between_use = 30
+        
+        trigger = {
+            estate_influence = {
+                estate = estate_pirates
+                influence = 40
+            }
+        }
+        
+        effect = {
+            add_scaled_estate_advisor = { 
+                ESTATE = estate_pirates 
+                ADVISOR = quartermaster
+            }
+            
+            add_estate_influence_modifier = {
+                estate = estate_pirates
+                desc = EST_VAL_RECRUITED_ADVISOR
+                influence = 15
+                duration = 10950
+            }
+        }
+        
+        
+        ai_will_do = {
+            factor = 0            
+        }
+    }
+    
+    # Recruit Spymaster
+    interaction = {
+        name = "RECRUIT_SPYMASTER"
+        icon = 11
+        
+        potential = { }
+        
+        years_between_use = 30
+        
+        trigger = {
+            estate_influence = {
+                estate = estate_pirates
+                influence = 40
+            }
+        }
+        
+        effect = {
+            add_scaled_estate_advisor = { 
+                ESTATE = estate_pirates 
+                ADVISOR = spymaster
+            }
+            
+            add_estate_influence_modifier = {
+                estate = estate_pirates
+                desc = EST_VAL_RECRUITED_ADVISOR
+                influence = 15
+                duration = 10950
+            }
+        }
+        
+        
+        ai_will_do = {
+            factor = 0            
+        }
+    }
+    
+    
+    # Appoint Captain
+    interaction = {
+        name = "APPOINT_CAPTAIN"
+        icon = 5
+        
+        years_between_use = 10
+        
+        potential = { }
+        
+        trigger = {
+            estate_loyalty = {
+                estate = estate_pirates
+                loyalty = 30
+            }    
+            estate_influence = {
+                estate = estate_pirates
+                influence = 40
+            }            
+        }
+        
+        effect = {
+            add_scaled_admiral = { ESTATE = estate_pirates }
+            
+            add_estate_influence_modifier = {
+                estate = estate_pirates
+                desc = EST_VAL_RECRUITED_LEADER
+                influence = 20
+                duration = 3650
+            }
+        }
+        
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    
+    # Rally Men
+    interaction = {
+        name = "RALLY_MEN"
+        icon = 12
+        
+        years_between_use = 15
+        
+        potential = {
+
+        }
+        
+        trigger = {
+            estate_loyalty = {
+                estate = estate_pirates
+                loyalty = 30
+            }
+            estate_influence = {
+                estate = estate_pirates
+                influence = 40
+            }
+        }
+        
+        effect = {
+            add_scaled_yearly_manpower = { ESTATE = estate_pirates }
+            
+            add_estate_loyalty = {
+                estate = estate_pirates
+                loyalty = -15
+            }
+        }
+        
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                NOT = {
+                    estate_loyalty = {
+                        estate = estate_pirates
+                        loyalty = 50
+                    }    
+                }
+            }
+            modifier = {
+                factor = 0
+                manpower_percentage = 0.25                
+            }
+            modifier = {
+                factor = 0
+                is_at_war = no
+            }            
+        }
+    }
+    
+    # Mobilize Clans
+    interaction = {
+        name = "MOBILIZE_CLANS"
+        icon = 15
+        
+        years_between_use = 25
+        
+        potential = { }
+        
+        trigger = {
+            estate_loyalty = {
+                estate = estate_pirates
+                loyalty = 30
+            }
+            estate_influence = {
+                estate = estate_pirates
+                influence = 40
+            }
+        }
+        
+        effect = {
+            remove_scaled_war_exhaustion = { ESTATE = estate_pirates }
+            
+            add_estate_loyalty = {
+                estate = estate_pirates
+                loyalty = -10
+            }
+            add_estate_influence_modifier = {
+                estate = estate_pirates
+                desc = EST_VAL_MOBILIZED_CLANS
+                influence = 15
+                duration = 3650
+            }
+        }
+        
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                NOT = {
+                    estate_loyalty = {
+                        estate = estate_pirates
+                        loyalty = 50
+                    }    
+                }
+            }
+            modifier = {
+                factor = 0
+                NOT = { war_exhaustion = 10 }
+            }          
+        }
+    }
+    
+    # Sail East Asia
+    interaction = {
+        name = "SAILED_EAST_ASIA"
+        icon = 18
+        
+        years_between_use = 20
+        
+        potential = { 
+            any_owned_province = {
+                has_port = yes
+            }
+        }
+        
+        trigger = {
+            estate_loyalty = {
+                estate = estate_pirates
+                loyalty = 30
+            }
+            estate_influence = {
+                estate = estate_pirates
+                influence = 40
+            }
+        }
+        
+        effect = {
+            random_owned_province = {
+                limit = { has_port = yes }
+                
+                add_unit_construction = {
+                    type = light_ship
+                    amount = 5
+                    speed = 2
+                    cost = 0
+                }
+                add_unit_construction = {
+                    type = galley
+                    amount = 5
+                    speed = 2
+                    cost = 0
+                }
+            }
+            
+            add_estate_loyalty = {
+                estate = estate_pirates
+                loyalty = 15
+            }
+            add_estate_influence_modifier = {
+                estate = estate_pirates
+                desc = EST_VAL_SAILED_EAST_ASIA
+                influence = 30
+                duration = 7200
+            }
+        }
+        
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+				estate_loyalty = {
+                        estate = estate_pirates
+                        loyalty = 50
+				}    
+            }       
+        }
+    }
+	
+    # Great piracy
+    interaction = {
+        name = "GREAT_PIRACY"
+        icon = 21
+        
+        years_between_use = 1
+        
+        potential = { 
+            any_owned_province = {
+				has_port = yes
+            }
+        }
+        
+        trigger = {
+			culture_group = japanese_g
+            estate_loyalty = {
+                estate = estate_pirates
+                loyalty = 20
+            }
+            estate_influence = {
+                estate = estate_pirates
+                influence = 50
+            }
+        }
+        
+        effect = {            
+			add_scaled_yearly_gold = { ESTATE = estate_pirates }
+			add_mercantilism = -1
+            add_estate_loyalty = {
+                estate = estate_pirates
+                loyalty = 5
+            }
+            add_estate_influence_modifier = {
+                estate = estate_pirates
+                desc = EST_VAL_GREAT_PIRACY
+                influence = 5
+                duration = 3600
+            }
+			set_country_flag = pirate_checked_wokou
+			country_event = { id = EK.003 }
+		}
+		
+		ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+				estate_loyalty = {
+                        estate = estate_pirates
+                        loyalty = 50
+				}    
+            }       
+        }
+	}
+}
