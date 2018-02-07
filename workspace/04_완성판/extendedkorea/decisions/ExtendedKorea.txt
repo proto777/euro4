@@ -18,8 +18,7 @@ country_decisions = {
 		}
 		effect = {
 			set_country_flag = independent_ryukyu_flag
-			change_government = feudal_monarchy
-			set_government_rank = 3
+			change_government = despotic_monarchy
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 3650

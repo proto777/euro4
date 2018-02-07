@@ -1,4 +1,4 @@
-government = despotic_monarchy
+government = feudal_monarchy
 government_rank = 2
 technology_group = chinese
 religion = confucianism
