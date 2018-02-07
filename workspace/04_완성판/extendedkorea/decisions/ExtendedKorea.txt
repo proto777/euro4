@@ -1,0 +1,34 @@
+country_decisions = {
+
+	# Independent Ryukyu
+	independent_ryukyu = {
+		major = yes
+		potential = {
+			is_year = 1592
+			tag = RYU
+			NOT = { has_country_flag = independent_ryukyu_flag }
+		}
+		allow = {
+			owns = 1012
+			owns = 1015
+			is_subject = no
+			stability = 3
+			legitimacy = 50
+			prestige = 50
+		}
+		effect = {
+			set_country_flag = independent_ryukyu_flag
+			change_government = feudal_monarchy
+			set_government_rank = 3
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+			change_tag = RYO
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+} #End of country decisions
