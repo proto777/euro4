@@ -10,13 +10,6 @@ dependency = {
 	end_date = 1587.6.3
 }
 
-vassal = {
-	first = ASK
-	second = SOO
-	start_date = 1420.1.1
-	end_date = 1587.6.3
-}
-
 #도요토미 정권에 충성을 맹세 - 임진왜란(고니시 유키나가)
 vassal = {
 	first = ODA

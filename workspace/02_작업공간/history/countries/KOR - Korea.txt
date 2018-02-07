@@ -6,7 +6,7 @@ add_harmonized_religion = mahayana
 technology_group = chinese
 capital = 735	# Hanseong
 
-1381.1.1 = { leader = {	name = "Yi Jong-Mu"		type = general	fire = 6	shock = 6	manuever = 6	siege = 6	death_date = 1425.6.24 } }
+1381.1.1 = { leader = {	name = "Jong-Mu Yi"		type = general	fire = 6	shock = 6	manuever = 6	siege = 6	death_date = 1425.6.24 } }
 
 1393.1.1 = {
 	monarch = {
@@ -90,7 +90,7 @@ capital = 735	# Hanseong
 	}
 }
 
-1405.12.1 = { leader = {	name = "Kim Jong-Seo"		type = general	fire = 3	shock = 6	manuever = 3	siege = 6	death_date = 1453.11.10 } }
+1405.12.1 = { leader = {	name = "Jong-Seo Kim"		type = general	fire = 3	shock = 6	manuever = 3	siege = 6	death_date = 1453.11.10 } }
 
 1450.5.18 = {
 	monarch = {
@@ -320,7 +320,7 @@ capital = 735	# Hanseong
 	}
 }
 
-1576.1.1 = { leader = {	name = "Yi Sun-Sin"		type = admiral	fire = 6	shock = 6	manuever = 6	siege = 0	death_date = 1598.12.16 } }
+1576.1.1 = { leader = {	name = "Sun-Sin Yi"		type = admiral	fire = 6	shock = 6	manuever = 6	siege = 0	death_date = 1598.12.16 } }
 
 1608.3.7 = {
 	monarch = {
@@ -358,17 +358,17 @@ capital = 735	# Hanseong
 	}
 }
 
-1637.1.1 = {
+1637.2.24 = {
 	government_rank = 1
 }
 
-1645.6.30 = {
-	government_rank = 2
-}
+# 1645.6.30 = {
+	# government_rank = 2
+# }
 
-1645.7.1 = {
-	government_rank = 1
-}
+# 1645.7.1 = {
+	# government_rank = 1
+# }
 
 1649.7.5 = {
 	monarch = {

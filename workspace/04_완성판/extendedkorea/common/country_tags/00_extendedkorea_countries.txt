@@ -1,1 +1,2 @@
 SOO = "countries/So.txt"
+RYO	= "countries/Ryukyu.txt"
