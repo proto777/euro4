@@ -6,7 +6,7 @@ country_event = {
 	desc = "EK.EVTDESC006"
 	picture = COURT_eventPicture
 
-	fire_only_once = yes
+	# fire_only_once = yes
 
 	trigger = {
 		tag = ODA
@@ -39,7 +39,7 @@ country_event = {
 				has_country_flag = Kyushu_conquest_daimyo 
 			}
 			declare_war_with_cb = {
-				who = FROM
+				who = THIS
 				casus_belli = cb_conquest
 			}
 		}

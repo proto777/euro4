@@ -1,3 +1,6 @@
+namespace = InV
+normal_or_historical_nations = yes
+
 #Demand Diplomacy Rights
 country_event = {
 	id = InV.1

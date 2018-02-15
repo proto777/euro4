@@ -1,3 +1,6 @@
+namespace = EK
+normal_or_historical_nations = yes
+
 #Pirates disaster
 country_event = {
 	id = EK.004

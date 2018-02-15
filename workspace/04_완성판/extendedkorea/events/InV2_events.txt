@@ -1,3 +1,6 @@
+namespace = InV
+normal_or_historical_nations = yes
+
 #Tartar Yoke
 country_event = {
 	id = InVH.90
